@@ -1,7 +1,5 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:instagram/components/post.dart';
-import 'package:instagram/constants.dart';
+import 'package:instagram/constants/svg_const.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 

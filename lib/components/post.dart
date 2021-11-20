@@ -1,4 +1,4 @@
-import 'package:instagram/constants.dart';
+import 'package:instagram/constants/svg_const.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -17,18 +17,18 @@ class Post extends StatelessWidget {
           child: Row(
             children: [
               Image.network(
-                "https://i.postimg.cc/hGqqvDQG/Yokozuna.jpg",
+                "https://i.postimg.cc/pd0sW-LV4/E913-B0-F3-C239-4207-AD7-B-836997-F5-A81-F.jpg",
                 height: 30,
               ),
               SizedBox(width: 10),
-              Text('Yokozuna59'),
+              Text('Ruffles'),
               Spacer(),
               SvgPicture.asset(kMoreSvgAsset),
             ],
           ),
         ),
         Image.network(
-          "https://i.postimg.cc/knCzy20J/E913-B0-F3-C239-4207-AD7-B-836997-F5-A81-F.jpg",
+          "https://i.postimg.cc/pd0sW-LV4/E913-B0-F3-C239-4207-AD7-B-836997-F5-A81-F.jpg",
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),
