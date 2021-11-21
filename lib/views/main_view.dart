@@ -26,7 +26,7 @@ class _MainViewState extends State<MainView> {
           BottomNavigationBarItem(icon: SvgPicture.asset(kHomeSvgAsset), label: 'Home'),
           BottomNavigationBarItem(
             icon: Image.network(
-              "https://firebasestorage.googleapis.com/v0/b/fozan-kh.appspot.com/o/watermelon.png?alt=media&token=0c4c219d-4376-432b-a3b7-598e42803bb9",
+              "https://i.postimg.cc/YqSyvH1w/51-E09-D86-9-F07-41-B9-99-B3-DC957964902-F.jpg",
               height: 30,
             ),
             label: 'Profile',

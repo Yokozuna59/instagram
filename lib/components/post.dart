@@ -17,11 +17,11 @@ class Post extends StatelessWidget {
           child: Row(
             children: [
               Image.network(
-                "https://i.postimg.cc/pd0sW-LV4/E913-B0-F3-C239-4207-AD7-B-836997-F5-A81-F.jpg",
+                "https://i.postimg.cc/YqSyvH1w/51-E09-D86-9-F07-41-B9-99-B3-DC957964902-F.jpg",
                 height: 30,
               ),
               SizedBox(width: 10),
-              Text('Ruffles'),
+              Text('Yokozuna59'),
               Spacer(),
               SvgPicture.asset(kMoreSvgAsset),
             ],
