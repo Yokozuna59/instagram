@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "509602955055",
+    "project_id": "instagtram-69fba",
+    "storage_bucket": "instagtram-69fba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509602955055:android:f41c3af3e88cbbca7aebda",
+        "android_client_info": {
+          "package_name": "com.example.instagram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509602955055-dlpi5dt996h0i5a045qr9v9f3qt9n161.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS3EMdAYisxnQvajE_wgXI4c34D46lgvo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509602955055-dlpi5dt996h0i5a045qr9v9f3qt9n161.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

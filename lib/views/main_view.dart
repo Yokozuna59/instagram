@@ -1,4 +1,4 @@
-import 'package:instagram/constants/svg_const.dart';
+import 'package:instagram/constants/const_svg.dart';
 import 'package:instagram/views/home_view.dart';
 import 'package:instagram/views/profile_view.dart';
 import 'package:flutter/material.dart';

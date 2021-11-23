@@ -1,5 +1,5 @@
 import 'package:instagram/components/post.dart';
-import 'package:instagram/constants/svg_const.dart';
+import 'package:instagram/constants/const_svg.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -17,6 +17,9 @@ class HomeView extends StatelessWidget {
         title: SvgPicture.asset(kLogoSvgAsset),
         actionsIconTheme: IconThemeData(color: Colors.black),
         actions: [
+          GestureDetector(
+            onTap:() => Navigator.push,
+          ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 21),
             child: SvgPicture.asset(kAddSvgAsset),

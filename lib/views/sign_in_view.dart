@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:instagram/constants/svg_const.dart';
+import 'package:instagram/constants/const_svg.dart';
 import 'package:instagram/views/main_view.dart';
 
 class SignInView extends StatefulWidget {
-  SignInView({Key key}) : super(key: key);
+  const SignInView({Key key}) : super(key: key);
 
   @override
   State<SignInView> createState() => _SignInViewState();
@@ -34,7 +34,7 @@ class _SignInViewState extends State<SignInView> {
                 username = value;
               },
               decoration: InputDecoration(
-                hintText: 'phone',
+                hintText: 'Email',
                 fillColor: Color(0xffFAFAFA),
                 filled: true,
                 enabledBorder: OutlineInputBorder(
@@ -54,7 +54,7 @@ class _SignInViewState extends State<SignInView> {
               },
               obscureText: true,
               decoration: InputDecoration(
-                hintText: 'password',
+                hintText: 'Password',
                 fillColor: Color(0xffFAFAFA),
                 filled: true,
                 enabledBorder: OutlineInputBorder(
@@ -79,7 +79,7 @@ class _SignInViewState extends State<SignInView> {
             ),
             MaterialButton(
               onPressed: () {
-                if (username == '7b7b' && password == '123') {
+                if (username == '7b7b' && password == '1234') {
                   print('Login Successes');
                   Navigator.push(context, MaterialPageRoute(builder: (context) => MainView()));
                 } else {
