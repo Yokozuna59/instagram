@@ -1,10 +1,27 @@
 import 'package:instagram/components/post.dart';
-import 'package:instagram/constants/const_svg.dart';
+import 'package:instagram/constants/svgs.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:instagram/models/post.dart';
+import 'package:instagram/views/add_post_view.dart';
 
-class HomeView extends StatelessWidget {
+class HomeView extends StatefulWidget {
   const HomeView({Key key}) : super(key: key);
+
+  @override
+  State<HomeView> createState() => _HomeViewState();
+}
+
+class _HomeViewState extends State<HomeView> {
+  List<Post> posts;
+
+  @override
+  void initState() {
+    loadPosts();
+    super.initState();
+  }
+
+  loadPosts() async {}
 
   @override
   Widget build(BuildContext context) {
@@ -18,11 +35,16 @@ class HomeView extends StatelessWidget {
         actionsIconTheme: IconThemeData(color: Colors.black),
         actions: [
           GestureDetector(
-            onTap:() => Navigator.push,
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 21),
-            child: SvgPicture.asset(kAddSvgAsset),
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => AddPostView(),
+              ),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 21),
+              child: SvgPicture.asset(kAddSvgAsset),
+            ),
           ),
           SvgPicture.asset(kHeartSvgAsset),
           Padding(
@@ -34,14 +56,14 @@ class HomeView extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Post(),
-            Post(),
-            Post(),
-            Post(),
-            Post(),
-            Post(),
-            Post(),
-            Post(),
+            PostViewer(),
+            PostViewer(),
+            PostViewer(),
+            PostViewer(),
+            PostViewer(),
+            PostViewer(),
+            PostViewer(),
+            PostViewer(),
           ],
         ),
       ),

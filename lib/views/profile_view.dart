@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:instagram/constants/const_svg.dart';
-import 'package:instagram/services/auth.dart';
-import 'package:instagram/wrapper.dart';
-
+import 'package:instagram/constants/svgs.dart';
 class ProfileView extends StatelessWidget {
   const ProfileView({Key key}) : super(key: key);
 
@@ -16,7 +13,7 @@ class ProfileView extends StatelessWidget {
         appBar: AppBar(
           elevation: 0,
           backgroundColor: Colors.white,
-          title: Text('FozanKh', style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700)),
+          title: Text('Yokozuna59', style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700)),
           actions: [
             SvgPicture.asset(kAddSvgAsset),
             Padding(
@@ -51,7 +48,7 @@ class ProfileView extends StatelessWidget {
                             image: DecorationImage(
                               fit: BoxFit.contain,
                               image: NetworkImage(
-                                kWatermelonBGLink,
+                                kYokozunaLink,
                               ),
                             ),
                           ),
@@ -59,29 +56,29 @@ class ProfileView extends StatelessWidget {
                       ),
                       Column(
                         children: [
-                          Text('0,000', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700)),
+                          Text('10', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700)),
                           Text('Posts', style: TextStyle(fontSize: 13)),
                         ],
                       ),
                       Column(
                         children: [
-                          Text('0,000', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700)),
+                          Text('1M', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700)),
                           Text('Followers', style: TextStyle(fontSize: 13)),
                         ],
                       ),
                       Column(
                         children: [
-                          Text('0,000', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700)),
+                          Text('1', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700)),
                           Text('Following', style: TextStyle(fontSize: 13)),
                         ],
                       ),
                     ],
                   ),
                   SizedBox(height: 10),
-                  Text("Fozan Alkhalawi", style: TextStyle(fontWeight: FontWeight.w700, fontSize: 13)),
+                  Text("Potato Sulais", style: TextStyle(fontWeight: FontWeight.w700, fontSize: 13)),
                   SizedBox(height: 5),
                   Text(
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt #hashtag",
+                    "A cute boy with cute cat.",
                     style: TextStyle(fontSize: 13),
                   ),
                   SizedBox(height: 10),

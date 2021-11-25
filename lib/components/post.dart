@@ -1,9 +1,8 @@
-import 'package:instagram/constants/const_svg.dart';
+import 'package:instagram/constants/svgs.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-
-class Post extends StatelessWidget {
-  const Post({
+class PostViewer extends StatelessWidget {
+  const PostViewer({
     Key key,
   }) : super(key: key);
 
@@ -21,7 +20,7 @@ class Post extends StatelessWidget {
                 height: 30,
               ),
               SizedBox(width: 10),
-              Text('Yokozuna59'),
+              Text('Ruffles'),
               Spacer(),
               SvgPicture.asset(kMoreSvgAsset),
             ],

@@ -1,4 +1,4 @@
-import 'package:instagram/constants/const_svg.dart';
+import 'package:instagram/constants/svgs.dart';
 import 'package:instagram/views/home_view.dart';
 import 'package:instagram/views/profile_view.dart';
 import 'package:flutter/material.dart';
@@ -10,7 +10,6 @@ class MainView extends StatefulWidget {
   @override
   _MainViewState createState() => _MainViewState();
 }
-
 class _MainViewState extends State<MainView> {
   int currentIndex = 0;
   @override

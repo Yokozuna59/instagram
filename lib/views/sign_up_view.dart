@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import 'package:instagram/constants/const_svg.dart';
+import 'package:instagram/constants/svgs.dart';
 import 'package:instagram/services/auth.dart';
 import 'package:instagram/views/sign_in_view.dart';
 import 'package:flutter/material.dart';
