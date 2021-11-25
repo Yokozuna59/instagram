@@ -16,6 +16,9 @@ class _MainViewState extends State<MainView> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+        type: BottomNavigationBarType.fixed,
         currentIndex: currentIndex,
         onTap: (index) {
           currentIndex = index;
@@ -23,10 +26,13 @@ class _MainViewState extends State<MainView> {
         },
         items: [
           BottomNavigationBarItem(icon: SvgPicture.asset(kHomeSvgAsset), label: 'Home'),
+          BottomNavigationBarItem(icon: SvgPicture.asset(kSearchSvgAsset), label: "Heart"),
+          BottomNavigationBarItem(icon: SvgPicture.asset(kReelsSvgAsset), label: "Real"),
+          BottomNavigationBarItem(icon: SvgPicture.asset(kShopSvgAsset), label: "Shop"),
           BottomNavigationBarItem(
             icon: Image.network(
               "https://i.postimg.cc/YqSyvH1w/51-E09-D86-9-F07-41-B9-99-B3-DC957964902-F.jpg",
-              height: 30,
+              height: 40,
             ),
             label: 'Profile',
           ),
@@ -36,6 +42,9 @@ class _MainViewState extends State<MainView> {
         index: currentIndex,
         children: [
           HomeView(),
+          Container(),
+          Container(),
+          Container(),
           ProfileView(),
         ],
       ),

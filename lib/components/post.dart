@@ -20,7 +20,7 @@ class PostViewer extends StatelessWidget {
                 height: 30,
               ),
               SizedBox(width: 10),
-              Text('Ruffles'),
+              Text('Yokozuna59'),
               Spacer(),
               SvgPicture.asset(kMoreSvgAsset),
             ],
